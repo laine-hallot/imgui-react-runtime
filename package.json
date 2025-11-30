@@ -29,6 +29,6 @@
   },
   "workspaces": [
     "examples/myapp",
-    "examples/testing-ffigen"
+    "lib/testing-ffigen"
   ]
 }

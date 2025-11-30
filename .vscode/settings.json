@@ -4,6 +4,11 @@
     "*.bb": "edge",
     "*.unit": "systemd-conf",
     "*.service": "systemd-unit-file",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iostream": "c",
+    "hello-world.h": "c",
+    "stdio.h": "c",
+    "cstdio": "c",
+    "*.inc": "cpp"
   }
 }

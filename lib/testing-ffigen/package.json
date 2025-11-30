@@ -1,0 +1,21 @@
+{
+  "name": "testing-ffigen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "esbuild": "^0.14.23",
+    "typescript": "^5.9.3",
+    "esbuild-plugin-babel-flow": "^0.0.5"
+  },
+  "scripts": {
+    "check": "tsc",
+    "build": "node esbuild.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

@@ -401,6 +401,7 @@ static void populate_sapp_desc_from_config(facebook::hermes::HermesRuntime *herm
 extern "C" SHUnit *sh_export_jslib(void);
 /// imgui-unit initialization.
 extern "C" SHUnit *sh_export_imgui(void);
+extern "C" SHUnit *sh_export_testingffigen(void);
 
 sapp_desc sokol_main(int argc, char *argv[]) {
   // Initialize Sokol time before anything else
@@ -465,6 +466,7 @@ sapp_desc sokol_main(int argc, char *argv[]) {
 
     // Load imgui unit
     hermes->evaluateSHUnit(sh_export_imgui);
+    hermes->evaluateSHUnit(sh_export_testingffigen);
 
     // Populate sapp_desc from globalThis.sappConfig
     populate_sapp_desc_from_config(hermes);
