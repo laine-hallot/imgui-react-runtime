@@ -12,7 +12,7 @@ hermes_compile_native(
     FLAGS -typed -Wc,-I.
 )
 
-add_library(testingffigen STATIC bindgen-out/js_externs_cwrap.c ${CMAKE_CURRENT_BINARY_DIR}/${TESTING_FFIGEN_O})
+add_library(testingffigen STATIC bindgen-out/js_externs_cwrap.c src/hello-world.c ${CMAKE_CURRENT_BINARY_DIR}/${TESTING_FFIGEN_O})
 set_target_properties(testingffigen PROPERTIES LINKER_LANGUAGE C)
 
 

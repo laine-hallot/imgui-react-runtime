@@ -4,6 +4,5 @@
 #include "../src/hello-world.h"
 
 void print_hello_world_cwrap() {
-    printf("hello world");
-    exit( 0 );
+    print_hello_world();
 }
